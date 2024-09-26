@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+}
+
+.body-style {
+    background-color: #09090b;
+    overflow: hidden;
+}
+
+.header-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: #18181b;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-style a {
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.main-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.home-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    color: #d4d4d8;
+}
+
+.div-button {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.button-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    background-color: #18181b;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.button-primary:hover {
+    background-color: #27272a;
+    color: #f4f4f5;
+}
+
+.button-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    background-color: #09090b;
+    padding: 0.5rem 1rem;
+    border: 1px solid #18181b;
+}
+
+.button-secondary:hover {
+    background-color: #27272a;
+    color: #f4f4f5;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.div-modal {
+    position: relative;
+    background-color: #18181b;
+    border-radius: 0.375rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.close-modal {
+    position: absolute;
+    top: 6px;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    /* line-height: 2rem; */
+    padding: 0 4px;
+}
+
+.close-modal:hover {
+    color: #ef4444;
+}
+
+
+/* MODAL PRICE */
+
+.table-main {
+    width: 100%;
+    caption-side: bottom;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+th {
+    height: 2.5rem;
+    width: 8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.th-center {
+    text-align: center;
+}
+
+.tr-styless {
+    transition: color 0.2s, background-color 0.2s;
+}
+  
+.tr-style:hover {
+    background-color: rgba(39, 39, 42, 0.5);
+}
+
+
+td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/* MODAL EMAIL */
+
+.email-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.email-input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border-color: #3f3f46;
+    border-style: solid;
+    outline: none;
+    background-color: #27272a;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  
+}
+  
+.email-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.submit-button {
+    border-radius: 0.375rem;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #1e3a8a;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+  
+.submit-button:hover {
+    background-color: #1e40af;
+}
+
+.hidden {
+    display: none;
+}

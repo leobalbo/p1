@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prova P1</title>
+</head>
+
+<body class="body-style">
+    <header class="header-style">
+        <div>
+            <h1>Maçã</h1>
+        </div>
+ 
+        <nav class="nav-style">
+            <a href="">Aba 1</a>
+            <a href="">Aba 1</a>
+            <a href="">Aba 1</a>
+            <a href="">Aba 1</a>
+        </nav>
+    </header>
+
+    <main class="main-style">
+        <div class="home-style">
+            <h2>AIPHONE 20 PLUS</h2>
+            <img src="banner.png" alt="">
+            <h3>Pré-venda a partir de 32/13/2033</h3>
+
+            <div class="div-button">
+                <button type="button" onclick="openEmailModalBtn()" class="button-primary">Saiba mais</button>
+                <button type="button" onclick="openPriceModalBtn()" class="button-secondary">Ver Preços</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODAL PREÇOS -->
+    <div id="priceModal" class="modal hidden">
+        <div class="div-modal">
+            <button type="button" onclick="closePriceModalBtn()" class="close-modal">&times;</button>
+    
+            <h2>Preços</h2>
+            <table class="table-main">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th class="th-center">Armazenamento</th>
+                        <th class="th-center">Preço</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="tr-style">
+                        <td>AIPHONE 20 PLUS</td>
+                        <td>64GB</td>
+                        <td>R$ 5.000,00</td>
+                    </tr>
+                    <tr class="tr-style">
+                        <td>AIPHONE 20 PLUS</td>
+                        <td>128GB</td>
+                        <td>R$ 6.000,00</td>
+                    </tr>
+                    <tr class="tr-style">
+                        <td>AIPHONE 20 PLUS</td>
+                        <td>256GB</td>
+                        <td>R$ 7.500,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- MODAL EMAIL -->
+    <div id="emailModal" class="modal hidden">
+        <div class="div-modal">
+            <button type="button" onclick="closeEmailModalBtn()" class="close-modal">&times;</button>
+
+            <h2 class="email-title">Fique por dentro das novidades</h2>
+            <form id="emailForm" class="form-email">
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="email-input">
+                <button type="submit" class="rounded-md text-sm font-medium bg-blue-900 px-4 py-2 hover:bg-blue-800 hover:text-zinc-100 submit-button">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function openPriceModalBtn() {
+            const priceModal = document.getElementById('priceModal');
+
+            priceModal.classList.remove('hidden');
+            
+        }
+
+        function closePriceModalBtn() {
+            const priceModal = document.getElementById('priceModal');
+
+            priceModal.classList.add('hidden');
+        }
+
+        function openEmailModalBtn() {
+            const emailModal = document.getElementById('emailModal');
+
+            emailModal.classList.remove('hidden');
+        }
+
+        function closeEmailModalBtn() {
+            const emailModal = document.getElementById('emailModal');
+
+            emailModal.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
